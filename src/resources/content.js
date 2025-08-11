@@ -1,8 +1,8 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "woosa",
+  lastName: "",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
@@ -15,11 +15,10 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Contact {person.firstName}</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      We occasionally connect with clients about software development, technology trends, and lessons learned from building real-world projects.
     </>
   ),
 };
@@ -58,7 +57,7 @@ const home = {
   headline: <>Transforming ideas into fast, reliable software.</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">woosa</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
@@ -66,7 +65,7 @@ const home = {
     We're Woosa, a software development team crafting fast, scalable, and user-friendly digital solutions.  We work closely with clients to turn their ideas into production-ready software.
 
 
-      {/* I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      {/* I'm woosa, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects. */}
     </>
   ),
@@ -93,7 +92,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
+        woosa is a Jakarta-based design engineer with a passion for transforming complex challenges
         into simple, elegant design solutions. Her work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
@@ -121,7 +120,7 @@ const about = {
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "woosa Project",
             width: 16,
             height: 9,
           },
@@ -165,7 +164,7 @@ const about = {
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: <>Able to prototype in Figma with woosa with unnatural speed.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -184,7 +183,7 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Building next gen apps with Next.js + woosa + Supabase.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {

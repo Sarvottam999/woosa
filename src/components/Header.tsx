@@ -8,6 +8,7 @@ import { Fade, Flex, Line, ToggleButton } from "@once-ui-system/core";
 import { routes, display, person, about, blog, work, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
+import Image from "next/image";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -61,7 +62,25 @@ export const Header = () => {
         data-border="rounded"
       >
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Flex hide="s">{person.location}</Flex>}
+          {/* {display.location && <Flex hide="s">{person.location}</Flex>} */}
+          <Image
+      src="/woosa-logo.png" // place your logo file in public/logo.png
+      alt="Site Logo"
+      width={20} // adjust size
+      height={20}
+      // style={{ borderRadius: "50%" }} // optional: make it circular
+    />
+    <h2 style={{
+      fontSize: "1.5rem",
+      marginLeft: "8px",
+      fontWeight: "bold",
+      color: "var(--once-color-text-default)", // Use your theme's text color
+    }}>
+    woosa
+
+    </h2>
+
+
         </Flex>
         <Flex fillWidth horizontal="center">
           <Flex
@@ -78,7 +97,7 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
-              {routes["/about"] && (
+              {/* {routes["/about"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
@@ -94,7 +113,7 @@ export const Header = () => {
                     selected={pathname === "/about"}
                   />
                 </>
-              )}
+              )} */}
               {routes["/work"] && (
                 <>
                   <ToggleButton
@@ -163,7 +182,7 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
+            {/* <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex> */}
           </Flex>
         </Flex>
       </Flex>
